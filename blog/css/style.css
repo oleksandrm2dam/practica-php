@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica;
+}
+
+.contenedor {
+
+}
+
+.logo {
+
+}
+
+.izquierda {
+	float: left;
+}
+
+.derecha {
+	float: right;
+}
+
+.buscar {
+
+}
+
+.icono {
+
+}
+
+.fa {
+
+}
+
+.fa-search {
+	
+}
