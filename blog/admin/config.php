@@ -4,7 +4,7 @@ define('RUTA', 'http://localhost/practica-php/blog/');
 
 $bd_config = array(
 	'basedatos' => 'blog_practica',
-	'usuario' => 'root',
+	'usuario' => 'root', 
 	'pass' => ''
 );
 

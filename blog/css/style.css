@@ -5,36 +5,64 @@
 
 body {
 	font-family: Helvetica;
+	background-color: grey;
 }
 
-.contenedor {
-
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: red;
 }
 
 .logo {
-
-}
-
-.izquierda {
 	float: left;
+	margin: 10px;
+	background-color: orange;
+	width: 100px;
+	height: 60px;
 }
 
-.derecha {
+.busqueda {
 	float: right;
+	margin: 10px;
 }
 
-.buscar {
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+}
+
+.articulo {
+	border: 1px solid black;
+	margin-top: 4%;
+	background-color: white;
+}
+
+.titulo {
 
 }
 
-.icono {
+.titulo a {
+	text-decoration: none;
+}
+
+.fecha {
 
 }
 
-.fa {
-
-}
-
-.fa-search {
+.thumb {
 	
+}
+
+.extracto {
+
+}
+
+.footer {
+	width: 100%;
+	height: 80px;
+	background-color: red;
+	text-align: center;
+	margin-top: 100px;
 }
