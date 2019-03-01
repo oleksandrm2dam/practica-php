@@ -3,7 +3,9 @@
 require 'config.php';
 require '../functions.php';
 
-comprobarSesion();
+if(!isset($_SESSION['admin'])) {
+	header('Location: ' . RUTA . '/login.php');
+}
 
 $conexion = conexion($bd_config);
 if (!$conexion) {
@@ -55,8 +57,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	$post = $post[0];
 }
-
-
 require '../views/editar.view.php';
-
 ?>

@@ -1,9 +1,0 @@
-CREATE TABLE IF NOT EXISTS `blog_practica`.`articulos` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `titulo` VARCHAR(200) NULL,
-  `extracto` VARCHAR(200) NULL,
-  `fecha` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
-  `texto` TEXT NULL,
-  `thumb` VARCHAR(50) NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB

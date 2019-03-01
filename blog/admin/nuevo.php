@@ -3,7 +3,9 @@
 require 'config.php';
 require '../functions.php';
 
-comprobarSesion();
+if(!isset($_SESSION['admin'])) {
+	header('Location: ' . RUTA . '/login.php');
+}
 
 $conexion = conexion($bd_config);
 if (!$conexion) {

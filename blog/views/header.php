@@ -8,7 +8,7 @@
 <body>
 	<div class="header">
 		<div class="logo">
-			<a href="<?php echo RUTA; ?>">LOGO</a>
+			<a href="<?php echo RUTA; ?>"><img src="<?php echo RUTA . '/' . $blog_config['carpeta_imagenes'] . 'logo.png';?>"></a>
 		</div>
 		<div class="busqueda">
 			<form name="busqueda" action="<?php echo RUTA; ?>/buscar.php" method="get">

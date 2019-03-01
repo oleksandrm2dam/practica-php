@@ -1,8 +1,13 @@
-<?php session_start();
+<?php 
+session_start();
 require 'config.php';
+if(!isset($_SESSION['admin'])) {
+	header('Location: ' . RUTA . '/login.php');
+}
+
 require '../functions.php';
 $conexion = conexion($bd_config);
-comprobarSesion();
+
 if (!$conexion) {
 	header('Location: ../error.php');
 }

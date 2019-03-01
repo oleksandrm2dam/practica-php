@@ -3,7 +3,6 @@
 <div class="contenedor">
 	<h2>Panel de control</h2>
 	<a href="nuevo.php">Nuevo Post</a>
-	<a href="cerrar.php">Cerrar sesión</a>
 	<?php foreach($posts as $post): ?>
 		<div class="articulo">
 			<h2 class="titulo"><?php echo $post['id'] . '.-' . $post['titulo']; ?></h2>

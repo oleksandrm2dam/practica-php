@@ -10,6 +10,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$_SESSION['admin'] = $blog_admin['usuario'];
 		header('Location:' . RUTA . '/admin');
 	}
+} else {
+	if(isset($_SESSION['admin'])) {
+		header('Location: ' . RUTA . '/admin');
+	}
 }
 
 require 'views/login.view.php';
